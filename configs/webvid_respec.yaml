@@ -1,0 +1,39 @@
+debug: False
+verbose: True
+
+###########
+# Dataset #
+###########
+data_root: './data'
+
+meta_path: 'data/webvid2m/meta.pkl'
+hdf5_path: 'data/webvid2m/sim.h5'
+video_embed_path: 'data/webvid2m/vid_emb.h5'
+text_embed_path: 'data/webvid2m/txt_emb.h5'
+
+encoder: 'LB'
+split_path: null
+data_name: 'webvid'
+batch_size: 1
+num_workers: 8
+eval_batch_size: 128
+eval_num_workers: 4
+batch_iter: 1
+
+#########
+# Model #
+#########
+device: 'cpu'
+model_name: 'respec'
+threshold: 0.2 # [0.2, 0.22, 0.24, 0.26, ...]
+
+downstream: "btadapter" 
+
+per_task_vmfkde_path: "data/per_task_vmf_kde"
+modality: "text"
+
+density_percentile: 5
+relevance_modality: 'text'
+
+dr_txt_thr: 10 # 10 25 50 0
+

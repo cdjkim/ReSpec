@@ -1,0 +1,16 @@
+decord >= 0.4.1
+einops
+matplotlib
+numpy > 2.0
+opencv-contrib-python
+Pillow
+scipy
+torch==2.0
+torchvision==0.15.1
+pytorchvideo
+ftfy
+regex
+transformers==4.35.0
+timm
+yapf==0.40.1
+einops
