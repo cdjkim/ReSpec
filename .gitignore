@@ -1,0 +1,41 @@
+*.swp
+*.pyc
+.ipynb_checkpoints
+*.tfidf
+.cenv
+.venv
+*.csv
+
+# Ignore data directory
+data
+checkpoints
+pretrained
+temp
+
+# Ignore checkpoints
+BT-adapter/checkpoints
+BT-adapter/work_dirs
+
+
+# Ignore run scripts
+# run_script
+
+# ignore slurm outputs
+slurm_outputs
+run_general.sh
+run_general_supp.sh
+
+# To ignore images
+# *.gif
+# *.srt
+# *.jpg*
+# *.eps
+
+# To ignore tensors
+*.tensors
+
+*.pt
+*.pth
+*.npy
+*.log
+*.lprof
